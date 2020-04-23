@@ -16,6 +16,9 @@
 		5D85BC34245123B70068F632 /* ItemListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BC33245123B70068F632 /* ItemListTests.swift */; };
 		5D85BC3F245123B70068F632 /* ItemListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BC3E245123B70068F632 /* ItemListUITests.swift */; };
 		5D85BC4E2451242F0068F632 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BC4D2451242F0068F632 /* Item.swift */; };
+		5D85BC53245147030068F632 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BC52245147030068F632 /* Car.swift */; };
+		5D85BC552451470D0068F632 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BC542451470D0068F632 /* Phone.swift */; };
+		5D85BC57245147140068F632 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BC56245147140068F632 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		5D85BC3E245123B70068F632 /* ItemListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListUITests.swift; sourceTree = "<group>"; };
 		5D85BC40245123B70068F632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D85BC4D2451242F0068F632 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5D85BC52245147030068F632 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		5D85BC542451470D0068F632 /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		5D85BC56245147140068F632 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				5D85BC4D2451242F0068F632 /* Item.swift */,
+				5D85BC52245147030068F632 /* Car.swift */,
+				5D85BC542451470D0068F632 /* Phone.swift */,
+				5D85BC56245147140068F632 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,7 +281,10 @@
 			files = (
 				5D85BC4E2451242F0068F632 /* Item.swift in Sources */,
 				5D85BC21245123B60068F632 /* ViewController.swift in Sources */,
+				5D85BC57245147140068F632 /* Book.swift in Sources */,
+				5D85BC53245147030068F632 /* Car.swift in Sources */,
 				5D85BC1D245123B60068F632 /* AppDelegate.swift in Sources */,
+				5D85BC552451470D0068F632 /* Phone.swift in Sources */,
 				5D85BC1F245123B60068F632 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

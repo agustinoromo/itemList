@@ -83,7 +83,6 @@ struct Items: Decodable {
 
     enum ItemTypes: String, Decodable {
         case book = "Book"
-        case orangeJuice = "orange_juice"
         case car = "Car"
         case phone = "Phone"
     }
@@ -99,17 +98,11 @@ struct Items: Decodable {
             let item = try itemsArrayForType.nestedContainer(keyedBy: ItemTypeKey.self)
             let type = try item.decode(ItemTypes.self, forKey: ItemTypeKey.type)
             switch type {
-            case .orangeJuice:
-                print("found drink")
-                items.append(try itemsArray.decode(Item.self))
             case .car:
-                print("found beer")
                 items.append(try itemsArray.decode(Car.self))
             case .phone:
-                print("found phone")
                 items.append(try itemsArray.decode(Phone.self))
             case .book:
-                print("found book")
                 items.append(try itemsArray.decode(Book.self))
             }
         }

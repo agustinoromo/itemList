@@ -21,9 +21,9 @@ class ViewController: UIViewController {
                 "year_published": 2010
             },
             {
-                "name": "Carlsbad Dealer",
+                "name": "Accord",
                 "type": "Car",
-                "description": "An alcoholic beverage, best drunk on fridays after work",
+                "description": "",
                 "maker": "Honda",
                 "year": 2015
             },
@@ -32,6 +32,33 @@ class ViewController: UIViewController {
                 "type": "Phone",
                 "description": "Best phone of 2018",
                 "model": "Samsung Galaxy Note",
+                "os": "Android"
+            },{
+                "name": "Masked Prey",
+                "type": "Book",
+                "description": "The 30th book in the Prey series. Washington politicians ask Lucas ",
+                "author": "John Sanford",
+                "year_published": 2020
+            },
+            {
+                "name": "Michaels's phone",
+                "type": "Phone",
+                "description": "The best phone for people who don't want to spend a bundle",
+                "model": "iPhone 11",
+                "os": "iOS"
+            },
+            {
+                "name": "Corolla",
+                "type": "Car",
+                "description": "",
+                "maker": "Toyota",
+                "year": 2010
+            },
+            {
+                "name": "Eric's phone",
+                "type": "Phone",
+                "description": "The OnePlus 8 Pro is a fantastic value because it packs so many features into a phone that costs less",
+                "model": "OnePlus 8 Pro",
                 "os": "Android"
             }
         ]
@@ -57,7 +84,7 @@ class ViewController: UIViewController {
                 }
             }
         } catch {
-            print("caught: \(error)")
+            print("Error: \(error)")
         }
     }
 

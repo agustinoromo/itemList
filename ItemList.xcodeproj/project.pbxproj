@@ -16,6 +16,7 @@
 		5D85BC34245123B70068F632 /* ItemListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BC33245123B70068F632 /* ItemListTests.swift */; };
 		5D85BC3F245123B70068F632 /* ItemListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BC3E245123B70068F632 /* ItemListUITests.swift */; };
 		5D85BC4E2451242F0068F632 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BC4D2451242F0068F632 /* Item.swift */; };
+		5D85BC51245139190068F632 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D85BC50245139190068F632 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5D85BC3E245123B70068F632 /* ItemListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListUITests.swift; sourceTree = "<group>"; };
 		5D85BC40245123B70068F632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D85BC4D2451242F0068F632 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5D85BC50245139190068F632 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				5D85BC1C245123B60068F632 /* AppDelegate.swift */,
 				5D85BC1E245123B60068F632 /* SceneDelegate.swift */,
 				5D85BC20245123B60068F632 /* ViewController.swift */,
+				5D85BC4F245138D80068F632 /* Views */,
 				5D85BC4C245124010068F632 /* Model */,
 				5D85BC22245123B60068F632 /* Main.storyboard */,
 				5D85BC25245123B70068F632 /* Assets.xcassets */,
@@ -137,6 +140,14 @@
 				5D85BC4D2451242F0068F632 /* Item.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5D85BC4F245138D80068F632 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D85BC50245139190068F632 /* ItemCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 				5D85BC21245123B60068F632 /* ViewController.swift in Sources */,
 				5D85BC1D245123B60068F632 /* AppDelegate.swift in Sources */,
 				5D85BC1F245123B60068F632 /* SceneDelegate.swift in Sources */,
+				5D85BC51245139190068F632 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

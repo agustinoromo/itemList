@@ -10,36 +10,53 @@ import UIKit
 
 class ViewController: UIViewController {
     
- 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var items = [Item]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSubViews()
         parseJSON()
-        
     }
-
+    
+    private func setupSubViews() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    
     private func parseJSON() {
         if let path = Bundle.main.path(forResource: "MockItemResponse", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonDecoder = JSONDecoder()
                 let results = try jsonDecoder.decode(Items.self, from:data)
-                for result in results.items {
-                    print(result.description)
-                    if let car = result as? Car {
-                        print(car.maker, car.name, car.description)
-                    }
-                    if let phone = result as? Phone {
-                        print(phone.model, phone.name, phone.description, phone.operatingSystem)
-                    }
-                    if let book = result as? Book {
-                        print(book.author, book.name, book.description, book.yearPublished)
-                    }
-                }
+                self.items = results.items
+                self.tableView.reloadData()
             } catch {
                 print("Error: \(error)")
             }
+            
         }
+        
+    }
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as? ItemCell else { return UITableViewCell() }
+        cell.setup(for: items[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
 }
 
